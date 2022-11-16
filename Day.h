@@ -16,7 +16,6 @@
 #include <sstream>
 #include <fstream>
 #include "Settings.h"
-#include "Settings.cpp"
 
 #define MARK 0
 #define DELETE 1
