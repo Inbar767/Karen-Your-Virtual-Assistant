@@ -16,17 +16,14 @@
 #include <shellapi.h>
 #include <cctype>
 #include "Assistant.h"
-#include "Assistant.cpp"
-
 
 #define USER_NAME "Inbar"
 #define USER_PASSWORD "12345"
 #define PASSWORD_LENGTH 5
 #define MENU_LENGTH 15
 
-enum Menu {Voice = 1, Word, Excel, Outlook, Notepad, Gmail, Google, Google_search,
-           Instagram, Youtube, Youtube_search, Tasks, Date, Off};
-enum period {morning = 5, afternoon = 12, evening = 18, night = 21};
+enum Menu {Voice = 1, Word, Excel, Outlook, Notepad, Gmail, Google, Google_search, Instagram, Youtube, Youtube_search, Tasks, Date, Off};
+enum Period {morning = 5, afternoon = 12, evening = 18, night = 21};
 
 class Board
 {
