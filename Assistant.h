@@ -13,7 +13,6 @@
 #define Assistant_H
 
 #include "Task_Manage.h"
-#include "Task_Manage.cpp"
 
 #define NUM_VOICES 5 
 #define DEFAULT_VOICE "f4" 
