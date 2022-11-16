@@ -10,8 +10,6 @@
 
 
 #include "Board.h"
-#include "Board.cpp"
-
 
 int main(){
     Board virtual_assistant;
