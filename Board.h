@@ -28,7 +28,7 @@ enum Period {morning = 5, afternoon = 12, evening = 18, night = 21};
 class Board
 {
 private:
-    const string options[MENU_LENGTH] {"back to search", "karen voice", "word", "excel", "outlook", "notepad","gmail",
+    const string BOARD_MENU[MENU_LENGTH] {"back to search", "karen voice", "word", "excel", "outlook", "notepad","gmail",
           "google", "google search", "instagram", "youtube", "youtube search", "tasks management", "date and time", "off"};
     Assistant Karen;
     Task_Manage tasks;
