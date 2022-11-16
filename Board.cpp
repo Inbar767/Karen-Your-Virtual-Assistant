@@ -151,21 +151,21 @@ int Board::menu()
     getline(cin >> ws, search);
     Settings_Functions::convert_to_lower(search);
     cout << endl;
-    if (search == options[MENU_LENGTH - 1])
-        return MENU_LENGTH - 1;
+    if (search == BOARD_MENU[OFF])
+        return OFF;
     if (search == "all")
         all = true;
     Style::headline("OPTIONS", false);
     for (int i{}; i < MENU_LENGTH; i++)
     {
-        if (all || options[i].find(search) != string::npos || i == MENU_LENGTH - 1 || i == 0)
-            cout << i << "- " << options[i] << endl;
+        if (all || BOARD_MENU[i].find(search) != string::npos || i == OFF || i == 0)
+            cout << i << "- " << BOARD_MENU[i] << endl;
     }
-    choice = Settings_Functions::insert_valid_choice("\nPlease enter your choice: ", 0, MENU_LENGTH - 1);
+    choice = Settings_Functions::insert_valid_choice("\nPlease enter your choice: ", 0, OFF);
     while (choice < 0)
     {
         Karen.dont_understand();
-        choice = Settings_Functions::insert_valid_choice("\nPlease enter your choice: ", 0, MENU_LENGTH - 1);
+        choice = Settings_Functions::insert_valid_choice("\nPlease enter your choice: ", 0, OFF);
     }
     return choice;
 }
