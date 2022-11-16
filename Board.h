@@ -15,7 +15,6 @@
 #include <Windows.h>
 #include <shellapi.h>
 #include "Assistant.h"
-#include "Assistant.cpp"
 
 #define USER_NAME "Inbar"
 #define USER_PASSWORD "12345"
