@@ -12,19 +12,12 @@
 #define Task_Manage_H
 
 #include <vector>
-#include "Day.cpp"
 #include "Day.h"
 
 #define NUM_MONTHS 12
 #define MENU_OPTIONS 5
 
-enum Tasks_Menu
-{
-    See = 0,
-    Add = 1,
-    Delete = 2,
-    Return = 4
-};
+enum Tasks_Menu {See = 0, Add = 1, Delete = 2, Return = 4};
 
 /*---------- class of the Task Management ----------*/
 class Task_Manage
