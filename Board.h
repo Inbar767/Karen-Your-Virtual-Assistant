@@ -24,17 +24,16 @@
 #define LINKS_POSITION 2
 #define SEARCH true
 
-enum Menu {Voice = 1, Word, Excel, Outlook, Notepad, Gmail, Google, Google_search,
-           Instagram, Youtube, Youtube_search, Tasks, Date, Off};
+enum Menu {Voice = 1, Word, Excel, Outlook, Notepad, Gmail, Google, Google_search, Instagram, Youtube, Youtube_search, Tasks, Date, Off};
 enum period {morning = 5, afternoon = 12, evening = 18, night = 21};
 
 class Board
 {
 private:
-    const string MENU[MENU_LENGTH] {"Back To Search", "Karen Voice", "Word", "Excel", "Outlook", "Notepad","Gmail",
-          "Google", "Google Search", "Instagram", "Youtube", "Youtube Search", "Tasks Management", "Date & Time", "Off"};
-    const string LINKS[NUM_LINKS] { "WINWORD.EXE", "EXCEL.EXE", "OUTLOOK.EXE", "Notepad", "http://gmail.com", "http://google.com",
-     "https://www.google.com/search?q=", "https://www.instagram.com/","https://www.youtube.com/","https://www.youtube.com/results?search_query="};
+    const string MENU[MENU_LENGTH] {"Back To Search", "Karen Voice", "Word", "Excel", "Outlook", "Notepad","Gmail", "Google", "Google Search",
+                                    "Instagram", "Youtube", "Youtube Search", "Tasks Management", "Date & Time", "Off"};
+    const string LINKS[NUM_LINKS] {"WINWORD.EXE", "EXCEL.EXE", "OUTLOOK.EXE", "Notepad", "http://gmail.com", "http://google.com","https://www.google.com/search?q=",
+                                   "https://www.instagram.com/","https://www.youtube.com/","https://www.youtube.com/results?search_query="};
     Assistant Karen;
     Task_Manage tasks;
 
