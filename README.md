@@ -11,5 +11,5 @@ After writing your searching keyword, Karen will display for you matching result
 ***<h2>Requirements</h2>*** 
 You must Download eSpeak - for Karen's voice.
 <br><br>**You can download it from here :**
-[eSpeak Download](https://espeak.sourceforge.net/download.html)
+<a href="https://espeak.sourceforge.net/download.html" target="_blank">eSpeak Download</a>
 
