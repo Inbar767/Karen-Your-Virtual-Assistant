@@ -116,7 +116,7 @@ void Board::access()
                 i--;
             }
         }
-        if(username != USERNAME || password != USER_PASSWORD)
+        if(username != USERNAME || password != PASSWORD)
             wrong_access();
         else
             sw_continue = false;
