@@ -16,8 +16,8 @@
 #include <shellapi.h>
 #include "Assistant.h"
 
-#define USER_NAME "Inbar"
-#define USER_PASSWORD "12345"
+#define USERNAME "Inbar"
+#define PASSWORD "12345"
 #define PASSWORD_LENGTH 5
 #define MENU_LENGTH 15
 #define NUM_LINKS 15
