@@ -48,7 +48,8 @@ namespace Style
     const string MIDDLE{"\t\t\t"};
     const int RED{4};
     const int GREEN{10};
-    const int white{7};
+    const int WHITE{7};
+    const int WHITE_BACK{0xFC};
 
     void headline(string, boolean);
     void wrong(string);
