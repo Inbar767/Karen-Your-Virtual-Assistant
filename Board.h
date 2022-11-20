@@ -41,7 +41,6 @@ private:
 
     void welcome();
     void access();
-    void wrong_access();
     int menu();
     void open_link(int app, boolean search);
     void date_time();
