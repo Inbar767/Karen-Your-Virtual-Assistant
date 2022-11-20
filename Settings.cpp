@@ -89,9 +89,9 @@ namespace Style
     {
         HANDLE text = GetStdHandle(STD_OUTPUT_HANDLE);
         SetConsoleTextAttribute(text, RED);
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0xFC);
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), WHITE_BACK);
         cout << phrase;
-        SetConsoleTextAttribute(text, white);
+        SetConsoleTextAttribute(text, WHITE);
     }
 
 };
