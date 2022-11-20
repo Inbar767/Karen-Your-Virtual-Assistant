@@ -20,6 +20,9 @@ void Board::run()
         choice = menu();
         switch (choice)
         {
+        case Off:
+        case Back:
+            break;
         case Voice:
             Karen.voice_manage();
             break;
@@ -60,6 +63,9 @@ void Board::run()
             break;
         case Date:
             date_time();
+            break;
+        default:
+            Karen.dont_understand();
             break;
         }
     } while (choice != Off);
@@ -170,11 +176,6 @@ int Board::menu()
         }
     }
     choice = Settings::insert_valid_choice("\nPlease enter your choice: ", MENU_LENGTH - 1);
-    while(choice < 0)
-    {
-        Karen.dont_understand();
-        choice = Settings::insert_valid_choice("\nPlease enter your choice: ", MENU_LENGTH - 1);
-    }
     return choice;
 }
 
