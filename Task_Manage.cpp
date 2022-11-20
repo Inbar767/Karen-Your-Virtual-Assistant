@@ -44,8 +44,6 @@ void Task_Manage::create_days()
 void Task_Manage::update()
 {
     int current_day = Time::current_day();
-    cout << "***current_day = " << current_day << "   today = " << today;
-    Sleep(5000);
     if (current_day == today)
         return;
     for (auto day : days)
