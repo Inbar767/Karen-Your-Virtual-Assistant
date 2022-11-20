@@ -56,8 +56,8 @@ namespace Style
 /*---------- Time - gets current time and date ----------*/
 namespace Time
 {
-    const time_t TIME{time(NULL)};
-    const tm *LOCAL_TIME{localtime(&TIME)};
+    time_t TIME{time(NULL)};
+    tm *LOCAL_TIME{localtime(&TIME)};
 
     int current_hour();
     int current_month();
