@@ -24,7 +24,7 @@
 #define LINKS_POSITION 2
 #define SEARCH true
 
-enum Menu {Voice = 1, Word, Excel, Outlook, Notepad, Gmail, Google, Google_search, Instagram, Youtube, Youtube_search, Tasks, Date, Off};
+enum Menu {Back = 0, Voice, Word, Excel, Outlook, Notepad, Gmail, Google, Google_search, Instagram, Youtube, Youtube_search, Tasks, Date, Off};
 enum period {morning = 5, afternoon = 12, evening = 18, night = 21};
 
 class Board
