@@ -58,9 +58,6 @@ namespace Style
 /*---------- Time - gets current time and date ----------*/
 namespace Time
 {
-    time_t currernt_time{time(NULL)};
-    tm *local_time{localtime(&currernt_time)};
-
     int current_hour();
     int current_month();
     int current_day();
