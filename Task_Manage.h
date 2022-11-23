@@ -45,6 +45,7 @@ private:
     void add_task();
     void see_tasks();
     void day_input(string &, string);
+    ~Task_Manage();
 
 public:
     Task_Manage();
