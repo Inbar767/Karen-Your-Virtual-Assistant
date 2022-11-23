@@ -117,7 +117,9 @@ namespace Time
     /*---------- current_day - returns current day. ----------*/
     int current_day()
     {
-        return LOCAL_TIME->tm_mday;
+        time_t currernt_time{time(NULL)};
+        tm *local{localtime(&currernt_time)};
+        return local->tm_mday;
     }
 
     /*---------- get_date - returns current date and hour. ----------*/
