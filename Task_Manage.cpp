@@ -206,7 +206,7 @@ void Task_Manage::day_input(string &day, string phrase)
     day = to_string(stoi(day));
 }
 
-~Task_Manage()
+Task_Manage::~Task_Manage()
 {
   for (auto day : days)
         delete day;
