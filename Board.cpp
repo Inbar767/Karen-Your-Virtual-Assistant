@@ -207,6 +207,7 @@ void Board::date_time()
     {
         date = Time::get_date();
         cout << date;
+        Sleep(1000);
         printf("\x1b[1F"); 
         printf("\x1b[2K"); 
         if (kbhit())
