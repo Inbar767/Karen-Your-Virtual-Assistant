@@ -210,6 +210,7 @@ void Task_Manage::day_input(string &day, string phrase)
     day = to_string(stoi(day));
 }
 
+//Delete all days from days vector after program ending
 Task_Manage::~Task_Manage()
 {
   for (auto day : days)
