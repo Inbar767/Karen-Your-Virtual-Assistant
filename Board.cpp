@@ -212,7 +212,7 @@ void Board::date_time()
         if (kbhit())
             display = false;
     }
-    
+  getch();
 }
 
 /*---------- exit - greets the user according to current hour and stops Karen's work ----------*/
