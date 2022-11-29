@@ -14,7 +14,6 @@
 #include <Windows.h>
 #include <shellapi.h>
 #include "Task_Manage.h"
-#include "Task_Manage.cpp"
 
 #define USERNAME "Inbar"
 #define USER_PASSWORD "12345"
