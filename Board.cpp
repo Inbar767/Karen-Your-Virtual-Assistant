@@ -201,19 +201,20 @@ void Board::date_time()
     system("CLS");
     Karen->speak("Opening date and time");
     Style::headline("DATE&TIME", true);
-    cout << "Press any key to go back";
-    cout << Style::HEADLINE_SPACE << Style::BORDER << endl;
+    cout << Style::MIDDLE << "Press any key to go back" << Style::HEADLINE_SPACE;
     while (display)
     {
         date = Time::get_date();
-        cout << date;
+        cout << Style::MIDDLE << "\e[1m" << date; //Prints date in bold font
         Sleep(1000);
-        printf("\x1b[1F"); 
+        printf("\x1b[1F"); //Go back to the last line begining and replace it
         printf("\x1b[2K"); 
         if (kbhit())
             display = false;
+            
     }
-  getch();
+    cout << "\e[0m"; //Off bold font
+    getch();
 }
 
 /*---------- exit - greets the user according to current hour and stops Karen's work ----------*/
