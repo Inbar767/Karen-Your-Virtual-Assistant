@@ -32,7 +32,7 @@ public:
     Day(string day);
     void remove_old_day(const string &);
     boolean show_day(Assistant *);
-    void add_task(string &task);
+    void add_task(string &);
     void change_day(int, const string &);
 };
 
