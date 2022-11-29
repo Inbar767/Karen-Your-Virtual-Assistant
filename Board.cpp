@@ -205,9 +205,9 @@ void Board::date_time()
     while (display)
     {
         date = Time::get_date();
-        cout << Style::MIDDLE << "\e[1m" << date; //Prints date in bold font
+        cout << Style::MIDDLE << "\e[1m" << date; //Prints date in a bold font
         Sleep(1000);
-        printf("\x1b[1F"); //Go back to the last line begining and replace it
+        printf("\x1b[1F"); //Goes back to the last line begining and replaces it
         printf("\x1b[2K"); 
         if (kbhit())
             display = false;
