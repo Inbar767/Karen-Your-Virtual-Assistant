@@ -63,7 +63,7 @@ private:
     void access();
     void wrong_access();
     int menu();
-    void open_link(int app, boolean search);
+    void open_link(int, boolean);
     void date_time();
     void exit();
 
