@@ -41,7 +41,7 @@ private:
 public:
     Task_Manage();
     ~Task_Manage();
-    void menu(Assistant*);
+    void menu(Assistant *);
 };
 
 #endif // TASK_MANAGE_H
