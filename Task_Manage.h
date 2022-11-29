@@ -32,8 +32,8 @@ private:
     void create_days();
     void update();
     int day_location_list(string &);
-    void complete_task(Assistant *Karen);
-    void remove_task(Assistant *Karen);
+    void complete_task(Assistant *);
+    void remove_task(Assistant *);
     void add_task();
     void see_tasks(Assistant *);
     void day_input(string &, string);
