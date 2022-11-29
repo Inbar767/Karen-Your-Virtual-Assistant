@@ -16,7 +16,6 @@
 #include <sstream>
 #include <fstream>
 #include "Assistant.h"
-#include "Assistant.cpp"
 
 #define MARK 0
 #define DELETE 1
