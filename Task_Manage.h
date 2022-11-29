@@ -12,7 +12,6 @@
 #define Task_Manage_H
 
 #include <vector>
-#include "Day.cpp"
 #include "Day.h"
 
 #define NUM_MONTHS 12
