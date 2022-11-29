@@ -13,7 +13,6 @@
 #define Assistant_H
 
 #include "Settings.h"
-#include "Settings.cpp"
 
 #define NUM_VOICES 5 
 #define DEFAULT_VOICE "f4" 
