@@ -242,7 +242,8 @@ void Board::exit()
     Karen->speak(phrase);
 }
 
-//Delete Karen after program ending
+
+/*---------- Destructor - deletes Karen after program ending ----------*/
 Board::~Board()
 {
     delete Karen;
