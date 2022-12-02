@@ -17,14 +17,14 @@ Assistant::Assistant()
     voice = DEFAULT_VOICE;
 }
 
-/*---------- speak - gets a phrase and say it ----------*/
+/*---------- speak - gets a phrase and says it ----------*/
 void Assistant::speak(const string &phrase)
 {
     string speaking = "espeak -v +";
     speaking += voice;
     string command = speaking + " \"" + phrase + "\"";
     const char *charCommand = command.c_str();
-    system(charCommand);
+    system(charCommand); 
 }
 
 /*---------- dont_understand - tells the user his input incorrect ----------*/
