@@ -14,7 +14,7 @@
 class Board
 {
 private:
-    enum Menu
+    enum Menu //All menu options
     {
       Back,
       Voice,
@@ -32,13 +32,14 @@ private:
       Date,
       Off
    };
-   enum period
+   enum period //Time period
    {
       morning = 5,
       afternoon = 12,
       evening = 18,
       night = 21
     };
+  
     const string USERNAME = "Inbar"
     const string USER_PASSWORD = "12345"
     const int PASSWORD_LENGTH = 5
@@ -46,9 +47,11 @@ private:
     const int NUM_LINKS = 15
     const int LINKS_POSITION = 2
     const boolean SEARCH = true
+    //Menu options
     const string MENU[MENU_LENGTH]{"Back To Search", "Karen Voice", "Word", "Excel", "Outlook", "Notepad", "Gmail",
                                    "Google", "Google Search", "Instagram", "Youtube", "Youtube Search", "Tasks Management", "Date & Time", "Off"};
-    const string LINKS[NUM_LINKS]{"WINWORD.EXE", "EXCEL.EXE", "OUTLOOK.EXE", "Notepad", "http://gmail.com", "http://google.com",
+  //Applications and sites links  
+  const string LINKS[NUM_LINKS]{"WINWORD.EXE", "EXCEL.EXE", "OUTLOOK.EXE", "Notepad", "http://gmail.com", "http://google.com",
                                   "https://www.google.com/search?q=", "https://www.instagram.com/", "https://www.youtube.com/", "https://www.youtube.com/results?search_query="};
     
     Assistant *Karen;
