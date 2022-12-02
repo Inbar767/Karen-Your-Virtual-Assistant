@@ -12,20 +12,19 @@
 #ifndef Day_H
 #define Day_H
 
-#include <filesystem>
-#include <sstream>
-#include <fstream>
-#include "Assistant.h"
-
-#define MARK 0
-#define DELETE 1
-
-enum Months_Range {January = 1, December = 12};
 
 /*---------- class of the Day ----------*/
 class Day
 {
 private:
+    enum Months_Range
+    {
+      January = 1,
+      December = 12
+    };
+  
+    const int MARK = 0; //Used to tell if task must be marked
+    const int DELETE = 1; //Used to tell if task must be deleted
     string day;
 
 public:
