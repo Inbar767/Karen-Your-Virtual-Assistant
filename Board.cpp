@@ -9,7 +9,12 @@
 */
 
 #include "Board.h"
+#include <Windows.h>
+#include <shellapi.h>
+#include "Task_Manage.h"
 
+
+/*---------- Constructor ----------*/
 Board::Board()
 {
     Karen = new Assistant();
