@@ -14,17 +14,24 @@
 #include <vector>
 #include "Day.h"
 
-#define NUM_MONTHS 12
-#define MENU_OPTIONS 5
-
-enum Tasks_Menu {See, Add, Delete, Complete, Return};
-
 /*---------- class of the Task Management ----------*/
 class Task_Manage
 {
 private:
-    const string TASKS_MENU[MENU_OPTIONS]{"See My Tasks", "Add New Task", "Delete Task", "Complete My Tasks", "Go Back to Menu"};
-    const int NUM_DAYS[NUM_MONTHS]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Number of days in every month
+    enum Tasks_Menu 
+    {
+      See,
+      Add,
+      Delete,
+      Complete,
+      Return
+    };
+  
+    const int NUM_OF_MONTHS = 12;
+    const int MENU_LENGTH = 5;
+    const string TASKS_MENU[MENU_LENGTH] {"See My Tasks", "Add New Task", "Delete Task", "Complete My Tasks", "Go Back to Menu"};
+    const int NUM_DAYS[NUM_OF_MONTHS] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Number of days in every month
+  
     int today;
     int month;
     vector <Day *> days;
