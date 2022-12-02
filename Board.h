@@ -11,51 +11,46 @@
 #ifndef Board_H
 #define Board_H
 
-#include <Windows.h>
-#include <shellapi.h>
-#include "Task_Manage.h"
-
-#define USERNAME "Inbar"
-#define USER_PASSWORD "12345"
-#define PASSWORD_LENGTH 5
-#define MENU_LENGTH 15
-#define NUM_LINKS 15
-#define LINKS_POSITION 2
-#define SEARCH true
-
-enum Menu
-{
-    Back,
-    Voice,
-    Word,
-    Excel,
-    Outlook,
-    Notepad,
-    Gmail,
-    Google,
-    Google_search,
-    Instagram,
-    Youtube,
-    Youtube_search,
-    Tasks,
-    Date,
-    Off
-};
-enum period
-{
-    morning = 5,
-    afternoon = 12,
-    evening = 18,
-    night = 21
-};
-
 class Board
 {
 private:
+    enum Menu
+    {
+      Back,
+      Voice,
+      Word,
+      Excel,
+      Outlook,
+      Notepad,
+      Gmail,
+      Google,
+      Google_search,
+      Instagram,
+      Youtube,
+      Youtube_search,
+      Tasks,
+      Date,
+      Off
+   };
+   enum period
+   {
+      morning = 5,
+      afternoon = 12,
+      evening = 18,
+      night = 21
+    };
+    const string USERNAME = "Inbar"
+    const string USER_PASSWORD = "12345"
+    const int PASSWORD_LENGTH = 5
+    const int MENU_LENGTH = 15
+    const int NUM_LINKS = 15
+    const int LINKS_POSITION = 2
+    const boolean SEARCH = true
     const string MENU[MENU_LENGTH]{"Back To Search", "Karen Voice", "Word", "Excel", "Outlook", "Notepad", "Gmail",
                                    "Google", "Google Search", "Instagram", "Youtube", "Youtube Search", "Tasks Management", "Date & Time", "Off"};
     const string LINKS[NUM_LINKS]{"WINWORD.EXE", "EXCEL.EXE", "OUTLOOK.EXE", "Notepad", "http://gmail.com", "http://google.com",
                                   "https://www.google.com/search?q=", "https://www.instagram.com/", "https://www.youtube.com/", "https://www.youtube.com/results?search_query="};
+    
     Assistant *Karen;
     Task_Manage tasks;
 
