@@ -23,7 +23,7 @@ void Task_Manage::create_days()
 {
     int month_of_day = month;
     Day *day;
-    for (int i = today; i <= NUM_DAYS[month_of_day - 1]; i++)
+    for (int i = today; i <= DAYS_IN_YEAR[month_of_day - 1]; i++)
     {
         day = new Day(to_string(i) + "." + to_string(month_of_day));
         days.push_back(day);
@@ -32,7 +32,7 @@ void Task_Manage::create_days()
         month_of_day++;
     else
         month_of_day = January;
-    for (int i = 1; i < today && i < NUM_DAYS[month_of_day - 1]; i++)
+    for (int i = 1; i < today && i < DAYS_IN_YEAR[month_of_day - 1]; i++)
     {
         day = new Day(to_string(i) + "." + to_string(month_of_day));
         days.push_back(day);
@@ -62,14 +62,14 @@ int Task_Manage::day_location_list(string &day)
     int searched_day = stoi(day);
     if (searched_day >= today)
         return searched_day - today;
-    return NUM_DAYS[month - 1] - today + searched_day;
+    return DAYS_IN_YEAR[month - 1] - today + searched_day;
 }
 
 /*---------- menu - displays the Task Management options and gets from the user his choice ----------*/
 void Task_Manage::menu(Assistant *Karen)
 {
-    boolean sw_continue = true;
-    int choice{};
+    boolean sw_continue {true};
+    int choice {};
     while (sw_continue)
     {
         system("CLS");
@@ -77,11 +77,11 @@ void Task_Manage::menu(Assistant *Karen)
         cout << Style::HEADLINE_SPACE << "You can manage all your tasks for the next month\n";
         cout << "What would you preffer do ?";
         cout << Style::HEADLINE_SPACE;
-        for (int i = 0; i < MENU_OPTIONS; i++)
+        for (int i = 0; i < MENU_LENGTH; i++)
         {
             cout << i << " - " << TASKS_MENU[i] << endl;
         }
-        choice = Settings::insert_valid_choice("\nPlease enter your choice: ", MENU_OPTIONS);
+        choice = Settings::insert_valid_choice("\nPlease enter your choice: ", MENU_LENGTH);
         switch (choice)
         {
         case Return:
@@ -154,10 +154,9 @@ void Task_Manage::add_task()
     update();
     system("CLS");
     Style::headline("ADD TASKS", true);
-    day_input(day, "please enter the day you would like to add a task to : ");
+    day_input(day, "Please enter the day you would like to add a task to : ");
     day_location = day_location_list(day);
-    cout << endl
-         << "\nEnter your new task : ";
+    cout << endl << "\nEnter your new task : ";
     getline(cin >> ws, new_task);
     days.at(day_location)->add_task(new_task);
 }
@@ -170,13 +169,12 @@ void Task_Manage::see_tasks(Assistant *Karen)
     update();
     system("CLS");
     Style::headline("YOUR TASKS", true);
-    day_input(day, "please enter the day you would like to see : ");
+    day_input(day, "Please enter the day you would like to see : ");
     cout << Style::HEADLINE_SPACE << Style::BORDER << endl;
     day_location = day_location_list(day);
     cout << "Your Tasks Are :" << Style::HEADLINE_SPACE;
     days.at(day_location)->show_day(Karen);
-    cout << endl
-         << Style::BORDER << Style::HEADLINE_SPACE;
+    cout << endl << Style::BORDER << Style::HEADLINE_SPACE;
     cout << "Press any key to go back ";
     getch();
 }
@@ -203,7 +201,7 @@ void Task_Manage::day_input(string &day, string phrase)
                 month_of_day = January;
             else
                 month_of_day++;
-            if (integer_day > NUM_DAYS[month_of_day - 1])
+            if (integer_day > DAYS_IN_YEAR[month_of_day - 1])
                 valid_day = false;
         }
     } while (!valid_day);
