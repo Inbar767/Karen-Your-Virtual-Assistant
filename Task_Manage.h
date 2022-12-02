@@ -30,7 +30,7 @@ private:
     const int NUM_OF_MONTHS = 12;
     const int MENU_LENGTH = 5;
     const string TASKS_MENU[MENU_LENGTH] {"See My Tasks", "Add New Task", "Delete Task", "Complete My Tasks", "Go Back to Menu"};
-    const int NUM_DAYS[NUM_OF_MONTHS] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Number of days in every month
+    const int DAYS_IN_YEAR[NUM_OF_MONTHS] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Number of days in every month
   
     int today;
     int month;
