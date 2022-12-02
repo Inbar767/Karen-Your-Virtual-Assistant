@@ -18,7 +18,7 @@
 class Task_Manage
 {
 private:
-    enum Tasks_Menu 
+    enum Tasks_Menu //All menu options
     {
       See,
       Add,
@@ -29,12 +29,14 @@ private:
   
     const int NUM_OF_MONTHS = 12;
     const int MENU_LENGTH = 5;
+    //Menu options
     const string TASKS_MENU[MENU_LENGTH] {"See My Tasks", "Add New Task", "Delete Task", "Complete My Tasks", "Go Back to Menu"};
-    const int DAYS_IN_YEAR[NUM_OF_MONTHS] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Number of days in every month
+    //How many days in each month 
+    const int DAYS_IN_YEAR[NUM_OF_MONTHS] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
   
     int today;
     int month;
-    vector <Day *> days;
+    vector <Day *> days; //Holds all the next month days
 
     void create_days();
     void update();
