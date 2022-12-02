@@ -9,6 +9,13 @@
 */
 
 #include "Settings.h"
+#include <time.h>
+#include <iostream>
+#include <conio.h>
+#include <Windows.h>
+#include <cctype>
+#include <cstring>
+#include <algorithm>
 
 namespace Settings
 {
