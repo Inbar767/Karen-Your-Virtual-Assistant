@@ -10,6 +10,10 @@
 
 
 #include "Day.h"
+#include <filesystem>
+#include <sstream>
+#include <fstream>
+#include "Assistant.h"
 
 /*---------- constructor ----------*/
 Day::Day(string day)
