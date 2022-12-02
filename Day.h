@@ -17,7 +17,7 @@
 class Day
 {
 private:
-    enum Months_Range
+    enum Months_Range //First and last months of the year
     {
       January = 1,
       December = 12
@@ -25,6 +25,7 @@ private:
   
     const int MARK = 0; //Used to tell if task must be marked
     const int DELETE = 1; //Used to tell if task must be deleted
+  
     string day;
 
 public:
