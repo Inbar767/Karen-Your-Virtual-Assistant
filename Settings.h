@@ -11,13 +11,6 @@
 #ifndef Settings_H
 #define Settings_H
 
-#include <time.h>
-#include <iostream>
-#include <conio.h>
-#include <Windows.h>
-#include <cctype>
-#include <cstring>
-#include <algorithm>
 #include <string>
 
 using namespace std;
