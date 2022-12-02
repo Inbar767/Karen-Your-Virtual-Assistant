@@ -9,6 +9,7 @@
 */
 
 #include "Assistant.h"
+#include "Settings.h"
 
 /*---------- constructor ----------*/
 Assistant::Assistant()
@@ -37,8 +38,8 @@ void Assistant::change_voice(int choice)
 {
     if (choice != 0)
     {
-        if (choice > NUM_VOICES)
-            voice = MALE_VOICES[choice - (NUM_VOICES + 1)];
+        if (choice > NUMBER_OF_VOICES)
+            voice = MALE_VOICES[choice - (NUMBER_OF_VOICES + 1)];
         else
             voice = FEMALE_VOICES[choice - 1];
     }
@@ -60,7 +61,7 @@ void Assistant::voice_manage()
         Style::headline("ASSISTANT VOICE", true);
         cout << "Please choose a number that represents voice from 1 to 10\nTo exit press 0\n";
         cout << Style::HEADLINE_SPACE;
-        choice = Settings::insert_valid_choice("\nPlease enter your choice: ", NUM_VOICES * 2);
+        choice = Settings::insert_valid_choice("\nPlease enter your choice: ", NUMBER_OF_VOICES * 2);
         if (choice < 0)
         {
             cout << Style::HEADLINE_SPACE;
