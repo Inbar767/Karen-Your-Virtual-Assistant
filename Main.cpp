@@ -12,7 +12,7 @@
 #include "Board.h"
 
 int main(){
-    Board virtual_assistant;
-    virtual_assistant.run();
+    Board karen;
+    karen.run();
     return 0;
 }
