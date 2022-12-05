@@ -50,8 +50,8 @@ private:
     //Menu options
     const string MENU[MENU_LENGTH]{"Back To Search", "Karen Voice", "Word", "Excel", "Outlook", "Notepad", "Gmail",
                                    "Google", "Google Search", "Instagram", "Youtube", "Youtube Search", "Tasks Management", "Date & Time", "Off"};
-  //Applications and sites links  
-  const string LINKS[NUM_LINKS]{"WINWORD.EXE", "EXCEL.EXE", "OUTLOOK.EXE", "Notepad", "http://gmail.com", "http://google.com",
+    //Applications and sites links  
+    const string LINKS[NUM_LINKS]{"WINWORD.EXE", "EXCEL.EXE", "OUTLOOK.EXE", "Notepad", "http://gmail.com", "http://google.com",
                                   "https://www.google.com/search?q=", "https://www.instagram.com/", "https://www.youtube.com/", "https://www.youtube.com/results?search_query="};
     
     Assistant *Karen;
